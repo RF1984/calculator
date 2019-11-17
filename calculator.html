@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 1 Calculator</title>
+    <meta name="description" content="Lab 1 Calculator">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="calculator_style.css">
+</head>
+
+<body>
+<script src="calculator.js"></script>
+<div class="calculatorContainer">
+    <div>
+        <div class="calculator">
+            <div class="calculatorContent">
+                <div class="calculatorTop">
+                    <div class="display">
+                        <div class="display-input">
+                            <span class="display-text" id="id-displayText"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculatorBody">
+                    <div class="button-container">
+                        <div class="button" id="id-backspace" onclick="backSpace()">
+                            &#9003;
+                        </div>
+                        <div class="button button-number" onclick="addNumber('7')">
+                            7
+                        </div>
+                        <div class="button button-number" onclick="addNumber('8')">
+                            8
+                        </div>
+                        <div class="button button-number" onclick="addNumber('9')">
+                            9
+                        </div>
+                        <div class="button button-operator" onclick="operatorMethod('/')">
+                            /
+                        </div>
+                        <div class="button button-number" onclick="addNumber('4')">
+                            4
+                        </div>
+                        <div class="button button-number" onclick="addNumber('5')">
+                            5
+                        </div>
+                        <div class="button button-number" onclick="addNumber('6')">
+                            6
+                        </div>
+                        <div class="button button-operator" onclick="operatorMethod('*')">
+                            *
+                        </div>
+                        <div class="button button-number" onclick="addNumber('1')">
+                            1
+                        </div>
+                        <div class="button button-number" onclick="addNumber('2')">
+                            2
+                        </div>
+                        <div class="button button-number" onclick="addNumber('3')">
+                            3
+                        </div>
+                        <div class="button button-operator" onclick="operatorMethod('-')">
+                            -
+                        </div>
+                        <div class="button button-number" onclick="addNumber('0')">
+                            0
+                        </div>
+                        <div class="button button-number" onclick="addDot()">
+                            .
+                        </div>
+                        <div class="button" id="id-evaluate" onclick="equal()">
+                            =
+                        </div>
+                        <div class="button button-operator" onclick="operatorMethod('+')">
+                            +
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="calculator.js"></script>
+</body>
+
+</html>
